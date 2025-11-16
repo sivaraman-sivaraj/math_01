@@ -118,7 +118,7 @@ elif operation == "Division":
     num2 = st.number_input("Enter the Value of B", format="%.2f")
     result = num1 / num2 if num2 != 0 else "❌ Cannot divide by zero" 
 elif operation == "Fibbonacci Curve":
-    N = st.number_input("Enter the number of terms (N)", min_value=1, max_value=100, value=6, step=1)
+    N = st.number_input("Enter the number of terms (N)", min_value=1, max_value=250, value=6, step=1)
     P,X,Y,L = Fibbonacci(N)
     # result = f"Fibbonacci Curve Length: {L:.2f} units" 
 
@@ -138,3 +138,4 @@ if st.button("Calculate"):
     # st.success(f"Result: {result}")
 ####################################################
 ####################################################
+
